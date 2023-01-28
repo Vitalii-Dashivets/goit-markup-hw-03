@@ -123,7 +123,7 @@ img {
 }
 
 .link-container {
-  width: 261px;
+  min-width: 261px;
   display: flex;
   justify-content: space-between;
   margin-left: 76px;
@@ -156,7 +156,7 @@ img {
   margin-top: 0px;
   margin-bottom: 48px;
   color: var(--white);
-  width: 495px;
+  width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -340,6 +340,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  max-width: fit-content;
 }
 
 .footer-logo-studio {
@@ -355,6 +356,8 @@ img {
 }
 .footer-container {
   flex-direction: column;
+  justify-content: space-around;
+  flex-basis: auto;
 }
 
 /*-------------------- Portfolio----------------------*/
