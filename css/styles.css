@@ -22,6 +22,7 @@ html {
   --background-site-color: #e5e5e5;
 
   --card-set-gap: 24px;
+  --card-set-gap-top: 48px;
   /*
     
     */
@@ -76,7 +77,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 15px;
 }
 
 .logo-studio {
@@ -131,7 +131,6 @@ img {
 
 .adress-container {
   display: flex;
-  margin-right: 15px;
   margin-left: auto;
 }
 
@@ -151,6 +150,7 @@ img {
 .hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
+  background-color: var(--navy-blue);
 }
 .hero-title {
   margin-top: 0px;
@@ -281,12 +281,12 @@ img {
   display: flex;
   justify-content: space-between;
   margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap-top));
 }
 .card-item {
   margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-
+  margin-top: var(--card-set-gap-top);
+  background-color: var(--white);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -431,18 +431,16 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap-top));
 }
 .works-list > .item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 
   margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+  margin-top: var(--card-set-gap-top);
 }
 .card-content {
   border: 1px solid var(--cornflower);
   border-top: hidden;
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
